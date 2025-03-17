@@ -4,8 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bodur Tesisat - Profesyonel Tesisat Hizmetleri</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <meta name="description" content="Bodur Tesisat - Kocaeli'de 7/24 profesyonel su kaçağı tespiti, tıkanıklık açma ve tesisat tamir hizmetleri. Garantili ve uygun fiyatlı çözümler.">
+    <meta name="keywords" content="tesisat, su kaçağı, tıkanıklık açma, Kocaeli tesisatçı, Çayırova tesisatçı, acil tesisat, doğalgaz tesisatı">
+    <meta name="author" content="Bodur Tesisat">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Bodur Tesisat - Profesyonel Tesisat Hizmetleri">
+    <meta property="og:description" content="Kocaeli'de 7/24 profesyonel tesisat hizmetleri. Su kaçağı tespiti, tıkanıklık açma ve tesisat tamiratı için hemen arayın.">
+    <meta property="og:image" content="img/bodur-tesisat-logo.jpg">
+    <meta property="og:url" content="https://www.bodurtesisat.com">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="css/style.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style">
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="img/plumbing-hero.jpg" as="image">
+
+    <link rel="canonical" href="https://www.bodurtesisat.com/">
 </head>
 <body>
     <div class="announcement-banner">
@@ -36,7 +52,7 @@
 
     <section class="hero" id="anasayfa">
         <div class="hero-image">
-            <img src="img/plumbing-hero.jpg" alt="Bodur Tesisat Profesyonel Hizmetler">
+            <img src="img/plumbing-hero.jpg" alt="Bodur Tesisat Kocaeli profesyonel tesisat hizmetleri" width="1200" height="600">
         </div>
         <div class="container">
             <div class="hero-content">
@@ -172,5 +188,39 @@
     </footer>
 
     <script src="js/main.js"></script>
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "PlumbingService",
+          "name": "Bodur Tesisat",
+          "image": "img/bodur-tesisat-logo.jpg",
+          "telephone": "+905375799558",
+          "email": "info@bodurtesisat.com",
+          "url": "https://www.bodurtesisat.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Akse Mah. 474 Sokak No:18",
+            "addressLocality": "Çayırova",
+            "addressRegion": "Kocaeli",
+            "postalCode": "41420",
+            "addressCountry": "TR"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "40.7890",
+            "longitude": "29.3925"
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "00:00",
+            "closes": "23:59"
+          },
+          "priceRange": "$$",
+          "servesCuisine": ["Su Tesisatı", "Doğalgaz Tesisatı", "Tıkanıklık Açma"],
+          "areaServed": ["Kocaeli", "Çayırova", "İzmit", "Gebze"]
+        }
+    </script>
 </body>
 </html>
