@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
+    <div class="announcement-banner">
+        <div class="banner-content">
+            <span class="banner-item"><i class="fas fa-tools"></i> Su Kaçağı, Tıkanıklık &amp; Tesisat Sorunları</span>
+            <span class="banner-item"><i class="fas fa-clock"></i> 7/24 Acil Servis: +90 537 579 95 58</span>
+            <span class="banner-item"><i class="fas fa-map-marker-alt"></i> Kocaeli ve Çevresi</span>
+            <span class="banner-item"><i class="fas fa-check-circle"></i> Garantili ve Profesyonel Hizmet</span>
+            <span class="banner-item"><i class="fas fa-tools"></i> Su Kaçağı, Tıkanıklık &amp; Tesisat Sorunları</span>
+            <span class="banner-item"><i class="fas fa-clock"></i> 7/24 Acil Servis: +90 537 579 95 58</span>
+        </div>
+    </div>
     <header>
         <div class="container">
             <div class="header-content">
@@ -25,11 +35,14 @@
     </header>
 
     <section class="hero" id="anasayfa">
+        <div class="hero-image">
+            <img src="img/plumbing-hero.jpg" alt="Bodur Tesisat Profesyonel Hizmetler">
+        </div>
         <div class="container">
             <div class="hero-content">
                 <h1>Profesyonel Tesisat Hizmetleri</h1>
                 <p>Sızıntı, tıkanıklık, montaj ve daha fazlası için güvenilir çözümler.</p>
-                <a href="#iletisim" class="btn">Hemen Arayın</a>
+                <a href="#iletisim" class="btn btn-white">Hemen Arayın</a>
             </div>
         </div>
     </section>
@@ -95,11 +108,17 @@
                 <p>Bizimle iletişime geçin</p>
             </div>
             <div class="contact-info">
-                <div class="contact-card">
-                    <i class="fas fa-phone"></i>
-                    <h3>Telefon</h3>
-                    <p>+90 555 123 45 67</p>
-                    <p>7/24 Acil Servis: +90 532 123 45 67</p>
+                <div class="emergency-service billboard">
+                    <span class="emergency-label">7/24 ACİL SERVİS</span>
+                    <a href="tel:+905375799558" class="emergency-phone-link">
+                        <i class="fas fa-phone-alt phone-icon"></i>
+                        <span>+90 537 579 95 58</span>
+                    </a>
+                    <div class="billboard-animation">
+                        <div class="message-1">Hemen Ara!</div>
+                        <div class="message-2">Anında Hizmet!</div>
+                        <div class="message-3">7/24 Yanınızdayız!</div>
+                    </div>
                 </div>
                 <div class="contact-card">
                     <i class="fas fa-envelope"></i>
@@ -109,34 +128,38 @@
                 <div class="contact-card">
                     <i class="fas fa-map-marker-alt"></i>
                     <h3>Adres</h3>
-                    <p>Örnek Mahallesi, Tesisat Caddesi No:123</p>
-                    <p>İstanbul / Türkiye</p>
+                    <p>Akse Mah. 474 Sokak No:18</p>
+                    <p>41420 Çayırova / Kocaeli</p>
                 </div>
             </div>
             <div class="contact-form">
                 <h3>Mesaj Gönderin</h3>
                 <form>
-                    <div class="form-group">
-                        <label for="name">Adınız:</label>
-                        <input type="text" id="name" name="name" required>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Adınız</label>
+                            <input type="text" id="name" name="name" placeholder="Ad Soyad" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone" placeholder="05XX XXX XX XX">
+                        </div>
                     </div>
                     
                     <div class="form-group">
-                        <label for="email">E-posta:</label>
-                        <input type="email" id="email" name="email" required>
+                        <label for="email">E-posta</label>
+                        <input type="email" id="email" name="email" placeholder="ornek@email.com" required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="phone">Telefon:</label>
-                        <input type="tel" id="phone" name="phone">
+                        <label for="message">Mesajınız</label>
+                        <textarea id="message" name="message" placeholder="Size nasıl yardımcı olabiliriz?" required></textarea>
                     </div>
                     
-                    <div class="form-group">
-                        <label for="message">Mesajınız:</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn">Gönder</button>
+                    <button type="submit" class="btn btn-submit">
+                        <i class="fas fa-paper-plane"></i> Gönder
+                    </button>
                 </form>
             </div>
         </div>
