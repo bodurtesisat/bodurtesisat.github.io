@@ -134,10 +134,10 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Phone number in the banner should be clickable
         banner.querySelectorAll('.banner-item').forEach(item => {
-            if (item.textContent.includes('+90 537 579 95 58')) {
+            if (item.textContent.includes('+90 543 939 30 59')) {
                 item.style.cursor = 'pointer';
                 item.addEventListener('click', function() {
-                    window.location.href = 'tel:+905375799558';
+                    window.location.href = 'tel:+905439393059';
                 });
             }
         });
